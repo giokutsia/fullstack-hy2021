@@ -1,0 +1,28 @@
+GET http://localhost:3003/api/blogs
+
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYxZjA2MzQxMmNjYjhkMjhlZmViYTVkNCIsImlhdCI6MTY0MzE1NDA0MywiZXhwIjoxNjQzMTU3NjQzfQ.o5janMFO11Ur9hSXuieuZ0f0k232MGSLUylzZR5J5dA
+
+{
+  "title": "Canonical string reduction",
+    "author": "Edsger W. Dijkstra",
+    "url": "http://www.cs.utexas.edu/~EWD/transcriptions/EWD08xx/EWD808.html",
+    "likes": 123
+   
+}
+###
+DELETE http://localhost:3003/api/blogs/61f07b9ecdb3ba3354b39597
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InJvb3QiLCJpZCI6IjYxZjA2MzQxMmNjYjhkMjhlZmViYTVkNCIsImlhdCI6MTY0MzE1NDA0MywiZXhwIjoxNjQzMTU3NjQzfQ.o5janMFO11Ur9hSXuieuZ0f0k232MGSLUylzZR5J5dA
+
+###
+PUT http://localhost:3003/api/blogs/61f0240fa249094178618eea
+Content-Type: application/json
+
+{
+  "title": "gamzrdeli",
+  "author": "akak tsereteli",
+  "url": "localhost",
+  "likes": 44445
+}

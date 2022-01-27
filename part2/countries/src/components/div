@@ -1,0 +1,12 @@
+  <form onSubmit={addPerson}>
+        <div>
+          name: <input onChange={e => setNewName(e.target.value)} value={newName}/>
+        </div>
+        <div>
+          number:<input onChange={e => setNumb(e.target.value)} value={newNumb}/>
+        
+        </div>
+        <div>
+          <button  type="submit">add</button>
+        </div>
+      </form>

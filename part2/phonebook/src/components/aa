@@ -1,0 +1,65 @@
+  <form onSubmit={addPerson}>
+        <div>
+          name: <input onChange={e => setNewName(e.target.value)} value={newName}/>
+        </div>
+        <div>
+          number:<input onChange={e => setNumb(e.target.value)} value={newNumb}/>
+        
+        </div>
+        <div>
+          <button  type="submit">add</button>
+        </div>
+      </form>
+
+
+
+const addPerson = (e) => {
+  e.preventDefault()
+
+ if(hasExactMatch){
+  window.alert(`${newName} or ${newNumb} is already added to phonebook `);
+ }else{
+  const newPerson = {
+    name: newName,
+    number: newNumb
+  }
+  axios
+    .post('http://localhost:3001/persons',newPerson )
+    .then(response => {
+      setPersons(persons.concat(response.data))
+    })
+  
+
+
+ }
+  
+        
+      setNewName('')
+      setNumb('')
+}
+
+
+
+const addPerson = (e) => {
+  e.preventDefault()
+  
+  if(hasExactMatch){
+    const updateOrnot =window.confirm(`${newName} is already added to phonebook, replace the old number? `);
+  }else if(newName !== '' && newNumb !== ''){
+
+    
+  const newPerson = {
+    
+    name: newName,
+    number: newNumb
+  }
+  personsServices 
+    .create(newPerson)
+    .then(returndPerson => {
+      setPersons(persons.concat(returndPerson.data))
+      setNewName('')
+      setNumb('')
+    })
+  }
+}
+

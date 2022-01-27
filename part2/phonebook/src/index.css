@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=The+Nautigal&display=swap");
+* {
+  margin: 0;
+  font-family: "QuickSand";
+}
+p {
+  color: rgb(0, 0, 0);
+}
+h2 {
+  color: #f1356d;
+}
+button {
+  margin-left: 10px;
+}
+form {
+  width: 100%;
+}
+input {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.divButt {
+  margin-top: 10px;
+  width: 100px;
+}
+.personDiv {
+  width: 25%;
+  margin-left: 25%;
+  padding: 20px;
+  height: 200px;
+  display: block;
+}
+.personDiv button {
+  margin-left: 2em;
+}
+.personDiv p {
+  color: #f1356d;
+  margin-top: 2em;
+}
+.mainDiv {
+  margin-left: 10px;
+  width: 100%;
+  align-items: center;
+  margin-top: 6em;
+  height: auto;
+}
+.elemDiv {
+  margin: 5px 5px 5px 10px;
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  margin-top: 5em;
+}
+.leftDiv {
+  width: 25%;
+  margin-top: 2em;
+}
+.inputDiv {
+  margin-top: 2em;
+  text-align: center;
+}
+.inputDiv h3 {
+  color: #f1356d;
+}
+.error {
+  color: red;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.success {
+  color: green;
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.info {
+  color: rgb(13, 0, 128);
+  background: lightgrey;
+  font-size: 20px;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.notDiv {
+  margin-top: 0em;
+}
+.persondiv2 {
+  display: inline;
+}
